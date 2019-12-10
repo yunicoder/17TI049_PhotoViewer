@@ -53,7 +53,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
 
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ImageCell", for: indexPath) // あらかじめストーリーボードで定義されていたUICollectionViewCell(identifier:ImageCell)
         let asset = photos[indexPath.item] // 表示したいインデックスのPHAssetのインスタンス（写真を管理）
-        //temp = photos[indexPath.item]
+        //print(String(indexPath.row) + " " + String(indexPath.section))
         let w = collectionView.bounds.size.width / 4 // 4等分（正方形なので高さも同じ）
         manager.requestImage(for: asset, targetSize: CGSize(width: w, height: w), contentMode: .aspectFill, options: nil, resultHandler: { result, info -> Void in // ここで画像データの取得
             if let image = result { // 画像データの取得に完了した後に取得した画像データ(result)をいimageに代入
@@ -74,6 +74,15 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat { // 縦のマージン値を返す
         return 0.5
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) { // 表示される直前に呼ばれる
+//        print(String(indexPath.item) +  "  " + String(photos.count))
+//        print(collectionView.contentSize.height)
+        if indexPath.item  == 27{
+            let lastItemIndex = IndexPath(row: photos.count - 1, section: 0)
+            collectionView.scrollToItem(at: lastItemIndex, at: .bottom, animated: false) // 一番下までスクロール
+        }
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) { // セグエによる画面遷移が行われる前に呼ばれるメソッド
