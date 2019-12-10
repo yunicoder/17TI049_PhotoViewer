@@ -27,7 +27,7 @@ class NextViewController: UIViewController {
         super.viewDidLoad()
         
         // 選択された画像を表示する
-        nextmanager.requestImage(for: phasset, targetSize: CGSize(width: 300, height: 200), contentMode: .aspectFill, options: nil, resultHandler: { result, info -> Void in // ここで画像データの取得
+        nextmanager.requestImage(for: phasset, targetSize: CGSize(width: 500, height: 500), contentMode: .aspectFill, options: nil, resultHandler: { result, info -> Void in // ここで画像データの取得
                 if let image = result { // 画像データの取得に完了した後に取得した画像データ(result)をimage代入
                     self.SelectedImage.image = image
                 }
