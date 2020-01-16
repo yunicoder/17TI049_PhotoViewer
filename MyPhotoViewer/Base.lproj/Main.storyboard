@@ -54,16 +54,6 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                 <items>
                                     <navigationItem title="カメラロール" id="bIo-FW-UMq">
-                                        <barButtonItem key="leftBarButtonItem" style="plain" id="ZbK-AG-7Rt">
-                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="egE-Vt-mP1">
-                                                <rect key="frame" x="16" y="7" width="83" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="Button"/>
-                                                <connections>
-                                                    <action selector="test:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nny-mM-qU0"/>
-                                                </connections>
-                                            </button>
-                                        </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" id="cWg-3N-HnO">
                                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="jOi-ig-iYv">
                                                 <rect key="frame" x="255" y="0.0" width="104" height="44"/>
@@ -176,11 +166,11 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pCo-9q-NcS">
-                                <rect key="frame" x="268.5" y="617" width="50" height="50"/>
+                                <rect key="frame" x="268.5" y="607" width="60" height="60"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="JXl-Mo-xbh"/>
-                                    <constraint firstAttribute="width" constant="50" id="ti4-hi-zo2"/>
+                                    <constraint firstAttribute="height" constant="60" id="JXl-Mo-xbh"/>
+                                    <constraint firstAttribute="width" constant="60" id="ti4-hi-zo2"/>
                                 </constraints>
                                 <connections>
                                     <action selector="changeType:" destination="lcD-bH-Qqn" eventType="touchUpInside" id="hsu-2a-D1b"/>
@@ -189,7 +179,7 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="pCo-9q-NcS" firstAttribute="top" secondItem="zD0-X8-KBf" secondAttribute="top" constant="10" id="F3c-C5-11t"/>
+                            <constraint firstItem="pCo-9q-NcS" firstAttribute="top" secondItem="zD0-X8-KBf" secondAttribute="top" id="F3c-C5-11t"/>
                             <constraint firstItem="EIn-Yv-kFj" firstAttribute="top" secondItem="eS7-6w-86P" secondAttribute="top" id="K0U-sp-55e"/>
                             <constraint firstItem="eS7-6w-86P" firstAttribute="trailing" secondItem="EIn-Yv-kFj" secondAttribute="trailing" id="P2V-iJ-DxG"/>
                             <constraint firstItem="eS7-6w-86P" firstAttribute="bottom" secondItem="zD0-X8-KBf" secondAttribute="bottom" id="Z2O-Gi-gcZ"/>
@@ -338,8 +328,7 @@
         <image name="imgRecog" width="100" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="lEY-xi-rGp"/>
-        <segue reference="dPZ-v9-Nmu"/>
+        <segue reference="cAd-bL-06F"/>
         <segue reference="4bH-tL-VcO"/>
     </inferredMetricsTieBreakers>
 </document>
