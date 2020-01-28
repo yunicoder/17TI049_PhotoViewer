@@ -54,6 +54,7 @@ class NextViewController: UIViewController {
                     style: .default,
                     handler: {(action) -> Void in self.afterDelete()}
                     ))
+                self.dismiss(animated: true, completion: nil)
                 self.present(okalert, animated: true) // 削除完了のアラートを表示
             }
             else{ // 削除失敗

@@ -35,6 +35,13 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         })
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        PHPhotoLibrary.requestAuthorization({status in if status == .authorized{ // ユーザーに対して写真の取得許可をリクエストして許可されているのかチェック
+                self.loadPhotos()  // 許可が出たのでメディア情報を取得(selfが必ず必要)
+            }
+        })
+    }
+    
     func loadPhotos() { // メディア情報を取得
         let result = PHAsset.fetchAssets(with: .image, options: nil) // メディア情報を取得(ここには写真データは入っていない)
         let indexSet = IndexSet(integersIn: 0 ..< result.count)  // インテックスの最初から最後までをセットに
