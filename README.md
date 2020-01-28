@@ -1,6 +1,6 @@
 # PhotoViewer機能と使い方の説明
 
-デモ映像をYouTubeにて公開しているのでよろしければ合わせてご覧ください。
+デモ映像をYouTubeにて公開しているのでよろしければ合わせてご覧ください。<br>
 https://youtu.be/6fMVju5-Xts
 
 
