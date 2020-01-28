@@ -1,4 +1,4 @@
-# PhotoViewer機能と使い方の説明
+# PhotoViewernの機能と使い方説明
 
 デモ映像をYouTubeにて公開しているのでよろしければ合わせてご覧ください。<br>
 https://youtu.be/6fMVju5-Xts
@@ -29,14 +29,15 @@ https://youtu.be/6fMVju5-Xts
 <img width="568" alt="スクリーンショット 2020-01-29 2 42 19" src="https://user-images.githubusercontent.com/50616084/73290047-14f30600-4241-11ea-8917-88e63098290e.png">
 
 ## カメラ機能
-カメラにて写真を撮ることができます。
-カメラロールから右上のカメラボタンを押すことでカメラに飛びます。
+カメラロールから右上のカメラボタンを押すことでカメラに飛びます。<br>
+ここでは写真を撮ることができ、内カメも使用することができます。
 
 <img width="568" alt="スクリーンショット 2020-01-29 2 45 22" src="https://user-images.githubusercontent.com/50616084/73290247-71eebc00-4241-11ea-8592-3fbccc0affe6.png">
 
 <img width="568" alt="スクリーンショット 2020-01-29 2 45 29" src="https://user-images.githubusercontent.com/50616084/73290253-74511600-4241-11ea-8520-a0fd884af731.png">
 
 ## AR機能
-登録した画像に好きな文字やアイコンを表示することができます。
-AR機能を
-画像をカメラ内に映り込むと
+カメラで右上の「画像認識」ボタンを押すとAR機能を使うことができます。
+登録した画像の上に好きな文字やアイコンを表示することができ、設定した画像がカメラ内に映り込むと上に文字が浮かび上がります。
+
+<img width="568" alt="スクリーンショット 2020-01-29 3 01 00" src="https://user-images.githubusercontent.com/50616084/73291507-a1062d00-4243-11ea-9567-1f669907eebd.png">
